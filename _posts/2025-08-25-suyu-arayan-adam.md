@@ -2,12 +2,12 @@
 layout: post
 title: Suyu Arayan Adam
 date: 2025-08-25
-description: Suyu Arayan Adam - Şevket Süreya Özdemir kitabından altı çizili bir bölüm
+description: Suyu Arayan Adam - Şevket Süreyya Özdemir kitabından altı çizili bir bölüm
 categories: [Tarih]
-tags: [Şevket Süreya Özdemir,Suyu Arayan Adam,kitap,tarih]
+tags: [Şevket Süreyya Özdemir,Suyu Arayan Adam,kitap,tarih]
 ---
 
-Şevket Süreya Özdemir'in Suyu Arayan Adam isimli kitabından Türkiye'nin günümüz durumuna projektör ile ışık tutan bir bölüm:
+Şevket Süreyya Özdemir'in Suyu Arayan Adam isimli kitabından Türkiye'nin günümüz durumuna projektör ile ışık tutan bir bölüm:
 
 "Halbuki o tarihlerde Türkiye hiç şüphe yok ki bir inkılâp yaşıyordu. Bu inkılâp bitmemişti. Fakat görünüyordu ki bazı insanlar bu inkılâbın önünde değil, ardında koşuyorlardı. Çankaya’da yerleşen insan, bu inkılâpların listesini, bu insanlara ne çare ki evvelden bildirmemişti. Öyle görünüyordu ki, Çankaya’da yeni bir inkılâp hamlesinin saati çalınca, bu hamle Mecliste hemen bir kanun haline geliyordu. O zaman her şey kolaylaşıyordu. O zaman, başına kanundan önce şapka giydi diye genç bir gazeteciyi merdivenlerden yuvarlayan adam, aradan kısa bir süre geçince, ünlü bir müderris şapka giymedi diye darağacına verebiliyordu...
 
