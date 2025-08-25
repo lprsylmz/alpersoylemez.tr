@@ -1,0 +1,83 @@
+title: Alper Söylemez
+description: alpersoylemez.tr
+author: alpersoylemez.tr
+year: 2025
+url: "https://alpersoylemez.tr"
+baseurl: ""
+
+# Sosyal medya linkleri
+social_media:
+  - name: "lprsylmz.tr"
+    url: "https://lprsylmz.tr"
+    image_dark: "/assets/images/favicon.png"
+    image_light: "/assets/images/favicon.ico"
+    alt: "lprsylmz.tr"
+  - name: "Goodreads"
+    url: "https://goodreads.com/lprsylmz"
+    image_dark: "/assets/images/sosyal/4s.webp"
+    image_light: "/assets/images/sosyal/4.webp"
+    alt: "Goodreads"
+  - name: "Bluesky"
+    url: "https://bsky.app/profile/lprsylmz.tr"
+    image_dark: "/assets/images/sosyal/5s.webp"
+    image_light: "/assets/images/sosyal/5.webp"
+    alt: "Bluesky"
+  - name: "Twitter"
+    url: "https://twitter.com/lprsylmz"
+    image_dark: "/assets/images/sosyal/1s.webp"
+    image_light: "/assets/images/sosyal/1.webp"
+    alt: "Twitter"
+  - name: "Instagram"
+    url: "https://www.instagram.com/lprsylmz"
+    image_dark: "/assets/images/sosyal/2s.webp"
+    image_light: "/assets/images/sosyal/2.webp"
+    alt: "Instagram"
+  - name: "Facebook"
+    url: "https://www.facebook.com/lprsylmz"
+    image_dark: "/assets/images/sosyal/3s.webp"
+    image_light: "/assets/images/sosyal/3.webp"
+    alt: "Facebook"
+  - name: "YouTube"
+    url: "https://www.youtube.com/@lprsylmz"
+    image_dark: "/assets/images/sosyal/6s.webp"
+    image_light: "/assets/images/sosyal/6.webp"
+    alt: "YouTube"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Alper Söylemez"
+
+
+
+
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - .git
+  - .DS_Store

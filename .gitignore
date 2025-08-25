@@ -1,0 +1,9 @@
+.DS_Store
+_site
+_jekyll-cache
+tailwind.config.js
+package-lock.json
+package.json
+node_modules
+.jekyll-cache
+

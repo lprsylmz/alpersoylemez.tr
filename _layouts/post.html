@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+<article class="min-h-screen mt-40 scroll-mt-40 ">
+    <header class="mb-8 shadow-sm p-4 rounded-2xl" x-bind:class="!darkMode ? 'shadow-white' : 'shadow-black'">
+        <h1 class="text-3xl font-bold mb-2 text-center">{{ page.title }}</h1>
+        <div class="text-center text-sm mb-4">
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+                {{ page.date | date: "%d %B %Y" }}
+                {{" | " }}
+                {% for cat in page.categories %}
+                <a href="/categories/#{{ cat | slugify }}" class="text-gray-600 hover:underline hover:text-gray-400">
+                    {{ cat }}
+                </a>
+
+                {% unless
+                forloop.last
+                %},{% endunless %}
+                {% endfor %}
+            </time>
+        </div>
+    </header>
+
+    <div class="max-w-3xl mx-auto space-y-6 shadow-sm p-4 rounded-2xl"
+        x-bind:class="!darkMode ? 'shadow-white' : 'shadow-black'">
+        {{ content }}
+    </div>
+
+
+
+    <footer class="mb-12">
+        <div class="text-center flex flex-wrap gap-2 justify-center shadow-sm p-4 rounded-2xl"
+            x-bind:class="!darkMode ? 'shadow-white' : 'shadow-black'">
+            {% for tag in page.tags %}
+            <div class="p-2">
+                <a href="/tags/#{{ tag | slugify }}" class="inline-block text-sm hover:bg-slate-300">
+                    #{{ tag }}
+                </a>
+
+            </div>
+            {% endfor %}
+        </div>
+        <div class="grid grid-cols-1 space-y-3 justify-center rounded-2xl shadow-sm  p-4"
+            x-bind:class="!darkMode ? 'shadow-white' : 'shadow-black'">
+            <div x-show="darkMode">
+                <div id="share_buttons" class="flex flex-row space-x-2 justify-center">
+                    <div
+                        class="p-2 transform transition-transform duration-200 hover:scale-125 active:scale-100 active:shadow-none hover:shadow-black rounded-full">
+                        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}"
+                            target="_blank" aria-label="Twitter'da paylaş">
+                            <img src="{{ 'assets/images/sosyal/1s.webp' | relative_url }}" class="w-6 h-6">
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 transform transition-transform duration-200 hover:scale-125 active:scale-100 active:shadow-none hover:shadow-black rounded-full">
+                        <a href="https://bsky.app/intent/compose?text={{ page.title | escape }}%20{{ site.url }}{{ page.url }}"
+                            target="_blank" aria-label="Bluesky'da paylaş">
+                            <img src="{{ 'assets/images/sosyal/5s.webp' | relative_url }}" class="w-6 h-6"
+                                alt="Bluesky'da Paylaş">
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 transform transition-transform duration-200 hover:scale-125 active:scale-100 active:shadow-none hover:shadow-black rounded-full">
+                        <a href="https://api.whatsapp.com/send?text={{ page.title }}%20{{ site.url }}{{ page.url }}"
+                            target="_blank" aria-label="WhatsApp'ta paylaş">
+                            <img src="{{ 'assets/images/sosyal/whatsapps.webp' | relative_url }}" class="w-6 h-6"
+                                alt="WhatsApp'ta paylaş">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div x-show="!darkMode">
+                <div id="share_buttons" class="flex flex-row space-x-2 justify-center">
+                    <div
+                        class="p-2 transform transition-transform duration-200 hover:scale-125 active:scale-100 active:shadow-none hover:shadow-white rounded-full">
+                        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}"
+                            target="_blank" aria-label="Twitter'da paylaş">
+                            <img src="{{ 'assets/images/sosyal/1.webp' | relative_url }}" class="w-6 h-6">
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 transform transition-transform duration-200 hover:scale-125 active:scale-100 active:shadow-none hover:shadow-white rounded-full">
+                        <a href="https://bsky.app/intent/compose?text={{ page.title | escape }}%20{{ site.url }}{{ page.url }}"
+                            target="_blank" aria-label="Bluesky'da paylaş">
+                            <img src="{{ 'assets/images/sosyal/5.webp' | relative_url }}" class="w-6 h-6"
+                                alt="Bluesky'da Paylaş">
+                        </a>
+                    </div>
+                    <div
+                        class="p-2 transform transition-transform duration-200 hover:scale-125 active:scale-100 active:shadow-none hover:shadow-white rounded-full">
+                        <a href="https://api.whatsapp.com/send?text={{ page.title }}%20{{ site.url }}{{ page.url }}"
+                            target="_blank" aria-label="WhatsApp'ta paylaş">
+                            <img src="{{ 'assets/images/sosyal/whatsapp.webp' | relative_url }}" class="w-6 h-6"
+                                alt="WhatsApp'ta paylaş">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</article>
