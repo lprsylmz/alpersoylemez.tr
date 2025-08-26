@@ -4,7 +4,7 @@ title: "Andor'un Andırdıkları"
 date: 2025-08-08
 description: "Ghorman Katliamı ve Mon Mothma'nın tarihi konuşması"
 categories: [Sinema]
-tags: [alıntı, sinema]
+tags: [Andor, Mon Mothma, Ghorman Katliamı, Star Wars]
 ---
 
 Ghorman Katliamı, Mon Mothma'nın uzun süredir sürdürdüğü diplomatik sessizliğin sonunu getiren kırılma noktası

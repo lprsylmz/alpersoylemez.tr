@@ -4,7 +4,7 @@ title: "Bünyamin-i Ayaşi"
 date: 2025-08-10
 description: "Bünyamin-i Ayaşi hakkındaki hikaye, Sarı Abdullah Efendi, Gönül Meyveleri: Semerât-ül-Fuad, Ankara, Ayaş"
 categories: [Ankara]
-tags: [alıntı, Ankara, Ayaş]
+tags: [Ankara, Ayaş,Sarı Abdullah Efendi,Gönül Meyveleri-Semerât-ül-Fuad]
 ---
 
 

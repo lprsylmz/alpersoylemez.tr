@@ -42,29 +42,36 @@ permalink: /tag/
   window.addEventListener('hashchange', showHashSection);
 })();
 </script>
+<section id="contents" class="w-full flex items-center justify-center">
+  <div class="w-full h-full md:w-4/5 flex items-center justify-center">
+    {%- if site.posts.size > 0 -%}
 
-<section id="contents" class="min-h-screen flex items-center justify-center">
-  {%- if site.posts.size > 0 -%}
+      {%- include functions/get_tags.html -%}
 
-    {%- include functions/get_tags.html -%}
+      {% assign tags = return %}
+      {% assign keys = tags %}
+      {% assign field = 'tags' %}
 
-    {% assign tags = return %}
-    {% assign keys = tags %}
-    {% assign field = 'tags' %}
+      <div id="tag-cloud"></div>
 
-    <div id="tag-cloud" class="relative w-[500px] h-[500px]"></div>
-
-  {%- endif -%}
+    {%- endif -%}
+  </div>
 </section>
 
 <style>
 #tag-cloud {
+  position: relative;
+  margin-top:100px;
+  width: 100%;
+  height: 100%;
   perspective: 1000px;
+  overflow: hidden;
 }
+
 #tag-cloud a {
   position: absolute;
   transform-origin: 0 0 0;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-weight: bold;
   white-space: nowrap;
   transition: transform 0.2s;
@@ -74,50 +81,60 @@ permalink: /tag/
 }
 </style>
 
+
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("tag-cloud");
-
-
-  const radius = 200;
   const tagElements = [];
+  const tags = [
+    {% for key in keys %}
+      { text: "{{ key }}", slug: "{{ key | slugify }}" }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
 
- const tags = [
-  {% for key in keys %}
-    { text: "{{ key }}", slug: "{{ key | slugify }}" }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
-];
+  tags.forEach((t) => {
+    const el = document.createElement("a");
+    el.href = "/tags/#" + t.slug;
+    el.textContent = t.text;
+    el.style.color = document.documentElement.classList.contains('dark') ? 'black' : 'white';
+    el.style.position = "absolute";
+    container.appendChild(el);
 
-tags.forEach((t, i) => {
-  const el = document.createElement("a");
-  el.href = "/tags/#" + t.slug;
-  el.textContent = t.text;
-  el.style.color = document.documentElement.classList.contains('dark') ? 'black' : 'white';
-  container.appendChild(el);
-  tagElements.push({el, angleX: Math.random() * Math.PI * 2, angleY: Math.random() * Math.PI * 2});
-});
+    const maxSpeed = 1; // yavaş hız
 
-
+    tagElements.push({
+      el,
+      x: Math.random() * (container.offsetWidth - 50),
+      y: Math.random() * (container.offsetHeight - 20),
+      vx: (Math.random() - 0.5) * maxSpeed,
+      vy: (Math.random() - 0.5) * maxSpeed
+    });
+  });
 
   function render() {
-    tagElements.forEach((tag) => {
-      tag.angleX += 0.002;
-      tag.angleY += 0.002;
+    const w = container.offsetWidth;
+    const h = container.offsetHeight;
 
-      const x = radius * Math.sin(tag.angleX) * Math.cos(tag.angleY);
-      const y = radius * Math.sin(tag.angleY);
-      const z = radius * Math.cos(tag.angleX) * Math.cos(tag.angleY) + radius;
+    tagElements.forEach(tag => {
+      const elW = tag.el.offsetWidth;
+      const elH = tag.el.offsetHeight;
 
-      const scale = 1.2 * (z / (2 * radius));
-      const left = x + container.offsetWidth / 2;
-      const top = y + container.offsetHeight / 2;
+      tag.x += tag.vx;
+      tag.y += tag.vy;
 
-      tag.el.style.transform = `translate(${left}px, ${top}px) scale(${scale})`;
-      tag.el.style.zIndex = Math.floor(z);
-      tag.el.style.opacity = scale;
+      if (tag.x <= 0) { tag.x = 0; tag.vx *= -1; }
+      if (tag.x + elW >= w) { tag.x = w - elW; tag.vx *= -1; }
+      if (tag.y <= 0) { tag.y = 0; tag.vy *= -1; }
+      if (tag.y + elH >= h) { tag.y = h - elH; tag.vy *= -1; }
+
+      tag.el.style.transform = `translate(${tag.x}px, ${tag.y}px)`;
     });
+
     requestAnimationFrame(render);
   }
+
   render();
 });
+
 </script>
