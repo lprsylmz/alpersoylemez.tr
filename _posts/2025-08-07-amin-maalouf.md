@@ -3,7 +3,7 @@ layout: post
 title: "Amin Maalouf'tan"
 date: 2025-08-07
 description: "Amin Maalouf'tan alıntı"
-categories: [Genel]
+categories: [Edebiyat]
 tags: [alıntı, edebiyat]
 ---
 

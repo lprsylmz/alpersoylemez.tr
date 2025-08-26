@@ -3,19 +3,37 @@
 
 <head>
     <script>
-        // Sadece production ortamında HTTPS yönlendirmesi yap
+        // HTTPS yönlendirmesi
         if (window.location.protocol !== "https:" && window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
             window.location.href = "https://" + window.location.host + window.location.pathname + window.location.search;
         }
     </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHZW1B9K3D"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-LHZW1B9K3D');
+    <!-- Google Analytics izleme kodunu kullanıcı onayı olmadan yükleme -->
+    <script>
+        function loadAnalytics() {
+            const script = document.createElement("script");
+            script.async = true;
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-LHZW1B9K3D";
+            document.head.appendChild(script);
+
+            script.onload = () => {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                window.gtag = gtag;
+                gtag('js', new Date());
+                gtag('config', 'G-LHZW1B9K3D');
+            };
+        }
+
+        function checkConsent() {
+            const consent = localStorage.getItem("analytics_consent");
+            if (consent === "accepted") {
+                loadAnalytics();
+            }
+        }
+
+        checkConsent();
     </script>
 
     <meta charset="UTF-8" />
@@ -53,9 +71,60 @@
         [x-cloak] {
             display: none !important;
         }
+
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1e293b;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            z-index: 9999;
+        }
+
+        #cookie-banner button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #cookie-accept {
+            background: #22c55e;
+            color: #fff;
+        }
+
+        #cookie-reject {
+            background: #ef4444;
+            color: #fff;
+        }
     </style>
 
-    <!-- Tema tercihini hemen uygula -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const consent = localStorage.getItem("analytics_consent");
+            if (!consent) {
+                document.getElementById("cookie-banner").style.display = "block";
+            }
+
+            document.getElementById("cookie-accept").onclick = function () {
+                localStorage.setItem("analytics_consent", "accepted");
+                loadAnalytics();
+                document.getElementById("cookie-banner").remove();
+            };
+
+            document.getElementById("cookie-reject").onclick = function () {
+                localStorage.setItem("analytics_consent", "rejected");
+                document.getElementById("cookie-banner").remove();
+            };
+        });
+    </script>
+
+    <!-- Tema tercihi -->
     <script>
         (function () {
             const isDark = localStorage.getItem('darkMode') === 'true';
@@ -89,7 +158,12 @@
 
     {% include footer.html %}
 
-    <!-- URL değiştirme kodu kaldırıldı -->
+    <!-- Çerez izin bannerı -->
+    <div id="cookie-banner" style="display:none;">
+        Bu site istatistikler için çerez kullanır. Kabul ediyor musunuz?
+        <button id="cookie-accept">Kabul Et</button>
+        <button id="cookie-reject">Reddet</button>
+    </div>
 
 </body>
 
