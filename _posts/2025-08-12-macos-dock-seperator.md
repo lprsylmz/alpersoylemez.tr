@@ -18,7 +18,7 @@ Eğer Dock’taki uygulama simgeleri arasına ayırıcı (separator) eklemek ist
 Terminal uygulamasını açın ve aşağıdaki komutu yapıştırıp çalıştırın:
 
 
-defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}' && killall Dock
+> defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}' && killall Dock
 
 
 Bu komut Dock’a görünmez bir ayırıcı öğesi ekler ve Dock’u yeniden başlatarak değişikliğin hemen görünmesini sağlar.
