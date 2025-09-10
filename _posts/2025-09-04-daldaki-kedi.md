@@ -8,7 +8,7 @@ tags: [video, kedi, Youtube]
 ---
 
 
-<div class="w-full p-10 " style="aspect-ratio:9/16;">
+<div class="w-full p-1 min-h-screen " style="aspect-ratio:9/16;">
   <iframe class="w-full h-full"
           src="https://www.youtube.com/embed/EjPoUXcdykQ"
           frameborder="0"
