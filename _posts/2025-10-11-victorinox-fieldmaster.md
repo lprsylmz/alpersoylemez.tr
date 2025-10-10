@@ -10,37 +10,25 @@ tags: [edc, multitool, kampçılık]
 
 Victorinox Fieldmaster, 91 mm uzunluğunda, İsviçre üretimi bir çok amaçlı çakıdır. Gövdesi kırmızı Cellidor malzemeden yapılmıştır ve yaklaşık 100 gram ağırlığındadır. Kilit sistemi yoktur, slip-joint mekanizmasıyla çalışır.
 
-Toplam 15 fonksiyona sahiptir:
+**Victorinox Fieldmaster Fonksiyonları**
 
-Büyük bıçak
 
-Küçük bıçak
+   1. Büyük bıçak
+   2. Küçük bıçak
+   3. Makas
+   4. Testere
+   5. Konserve açacağı
+   6. Şişe açacağı
+   7. Tornavida 3 mm
+   8. Tornavida 6 mm
+   9. Phillips (yıldız) tornavida
+   10. Tel sıyırıcı
+   11. Delik açıcı (reamer)
+   12. Çok amaçlı kanca
+   13. Cımbız
+   14. Kürdan
+   15. Anahtarlık halkası
 
-Makas
-
-Testere
-
-Konserve açacağı
-
-Şişe açacağı
-
-Tornavida 3 mm
-
-Tornavida 6 mm
-
-Phillips (yıldız) tornavida
-
-Tel sıyırıcı
-
-Delik açıcı (reamer)
-
-Çok amaçlı kanca
-
-Cımbız
-
-Kürdan
-
-Anahtarlık halkası
 
 Bushcraft, doğada hayatta kalma ve doğal kaynakları kullanarak barınma, ateş yakma, yiyecek bulma, su elde etme, alet yapma gibi becerileri kapsayan genel terimdir. Türkçede “doğada hayatta kalma sanatı” veya “doğal yaşam becerileri” olarak karşılanır. Fieldmaster modeli bushcraft, kamp, doğa yürüyüşü, tamir, hobi ve günlük kullanım için uygundur. Testere ve yıldız tornavida bulunması onu benzer 91 mm modeller arasında çok yönlü kılar. Dezavantajları arasında kilitli bıçak olmaması ve tek elle açılmaması bulunur.
 
