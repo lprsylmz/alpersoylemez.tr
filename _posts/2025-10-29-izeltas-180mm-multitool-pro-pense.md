@@ -7,7 +7,7 @@ categories: [EDC]
 tags: [edc, multitool, kampçılık, izeltaş]
 ---
 
-## İzeltaş 180 mm Multi Tool Pro (15 Fonksiyonlu)
+## İzeltaş 180mm Multi Tool Pro (15 Fonksiyonlu)
 
 İzeltaş **180 mm Multi Tool Pro**, profesyonel kullanım için tasarlanmış çok amaçlı bir el aletidir. Sağlam gövde yapısı, değiştirilebilir testere ve tel kesici uçlarıyla uzun ömürlü kullanım sunar. Güvenlik kilidi mekanizması, her fonksiyonun güvenli şekilde kullanılmasını sağlar.
 
