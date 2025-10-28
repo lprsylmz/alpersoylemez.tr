@@ -1,7 +1,7 @@
 ---
 layout: post
 title: İzeltaş 180mm Multi Tool Pro Pense
-date: 2025-10-29
+date: 2025-10-28
 description: İzeltaş 180mm Multi Tool Pro Pense - EDC
 categories: [EDC]
 tags: [edc, multitool, kampçılık, izeltaş]
@@ -49,5 +49,3 @@ Pense, bıçak, testere, tornavida ve daha fazlası tek bir kompakt yapıda bir 
 </div>
 
 ---
-
-
