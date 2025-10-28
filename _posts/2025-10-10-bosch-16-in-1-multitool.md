@@ -37,6 +37,6 @@ Bosch 16-in-1 Multitool, paslanmaz çelikten üretilmiş çok amaçlı bir pense
 
 Ev, atölye, kamp ve outdoor kullanımı için tasarlanmıştır. Dayanıklılığı, kilitleme sistemi ve ergonomik yapısı öne çıkar.
 
-<div class="w-full p-1 min-h-screen flex flex-row justify-center" style="aspect-ratio:16/9;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/1aTi64lUk2I?si=Y4Dn-8xTk8MzV1v-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="w-full flex justify-center p-1" style="aspect-ratio:16/9;">
+  <iframe class="w-full h-full rounded-2xl" src="https://www.youtube.com/embed/1aTi64lUk2I?si=Y4Dn-8xTk8MzV1v-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>

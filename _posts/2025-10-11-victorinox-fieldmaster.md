@@ -32,6 +32,6 @@ Victorinox Fieldmaster, 91 mm uzunluğunda, İsviçre üretimi bir çok amaçlı
 
 Bushcraft, doğada hayatta kalma ve doğal kaynakları kullanarak barınma, ateş yakma, yiyecek bulma, su elde etme, alet yapma gibi becerileri kapsayan genel terimdir. Türkçede “doğada hayatta kalma sanatı” veya “doğal yaşam becerileri” olarak karşılanır. Fieldmaster modeli bushcraft, kamp, doğa yürüyüşü, tamir, hobi ve günlük kullanım için uygundur. Testere ve yıldız tornavida bulunması onu benzer 91 mm modeller arasında çok yönlü kılar. Dezavantajları arasında kilitli bıçak olmaması ve tek elle açılmaması bulunur.
 
-<div class="w-full p-1 min-h-screen flex flex-row justify-center" style="aspect-ratio:16/9;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/jW_fZpypBf8?si=6iRA0lXTMxtwfJrF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="w-full flex justify-center p-1" style="aspect-ratio:16/9;">
+  <iframe class="w-full h-full rounded-2xl" src="https://www.youtube.com/embed/jW_fZpypBf8?si=6iRA0lXTMxtwfJrF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>

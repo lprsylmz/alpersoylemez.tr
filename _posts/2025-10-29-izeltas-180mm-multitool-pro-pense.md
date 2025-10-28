@@ -44,8 +44,9 @@ Pense, bıçak, testere, tornavida ve daha fazlası tek bir kompakt yapıda bir 
 
 ---
 
-<div class="w-full p-1 min-h-screen flex flex-row justify-center" style="aspect-ratio:16/9;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/67iM_9eRBkg?si=PHLGIyNP57U1LUac" title="İzeltaş Multi Tool Pro Tanıtımı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="w-full flex justify-center p-1" style="aspect-ratio:16/9;">
+  <iframe class="w-full h-full rounded-2xl" src="https://www.youtube.com/embed/67iM_9eRBkg?si=PHLGIyNP57U1LUac" title="İzeltaş Multi Tool Pro Tanıtımı" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
 
 ---
