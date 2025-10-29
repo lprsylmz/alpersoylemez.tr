@@ -59,7 +59,8 @@ collections:
   posts:
     output: true
     permalink: /:title/
-
+  pages:
+    output: true
 # Defaults
 defaults:
   - scope:
