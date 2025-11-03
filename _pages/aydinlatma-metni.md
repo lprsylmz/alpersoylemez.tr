@@ -4,39 +4,38 @@ title: Aydınlatma Metni
 permalink: /aydinlatma-metni/
 ---
 
-Aydınlatma Metni (Çerez Politikası)
+Aydınlatma Metni
 
-Bu web sitesi, kullanıcı deneyimini geliştirmek ve istatistiksel analiz yapmak amacıyla sınırlı sayıda çerez kullanmaktadır.
+Bu web sitesi, kullanıcı deneyimini geliştirmek amacıyla yalnızca tema tercihini (karanlık/açık mod) hatırlamak için tarayıcı depolama alanını (localStorage) kullanır. Bu işlem herhangi bir kişisel veri, tanımlayıcı bilgi veya çerez oluşturmaz.
 
-1. Veri Sorumlusu
+Veri Sorumlusu
 
 Bu site, kişisel verilerin işlenmesinden sorumlu veri sorumlusudur.
 
-2. İşlenen Veriler
+İşlenen Veriler
 
-Sadece Google Analytics ve Microsoft Clarity servisleri tarafından anonimleştirilmiş istatistiksel veriler toplanmaktadır.
-Bu veriler, kullanıcı kimliğini doğrudan belirlemez ve kişisel veri niteliği taşımayan teknik bilgileri (sayfa görüntüleme sayısı, ziyaret süresi, tıklama alanları vb.) içerir.
+Herhangi bir kişisel veri veya çerez işlenmemektedir. Tarayıcıda yalnızca görsel tema tercihi (darkMode) saklanır.
 
-3. İşleme Amacı
+İşleme Amacı
 
-Toplanan veriler, site trafiğini ve kullanıcı etkileşimini analiz ederek içerik ve tasarım iyileştirmesi yapmak amacıyla işlenmektedir.
+Kullanıcının bir sonraki ziyaretinde tercih ettiği görünümün korunmasıdır.
 
-4. Hukuki Sebep
+Hukuki Sebep
 
-Veri işleme faaliyeti, açık rızaya dayanır. “Kabul Et” seçeneğini tıklamanız halinde bu araçlar devreye girer. “Reddet” seçeneği ile onay vermemeniz durumunda herhangi bir izleme çerezi yerleştirilmez.
+İşlem, kullanıcının açık rızasına gerek olmaksızın meşru menfaat kapsamında teknik zorunluluk olarak gerçekleştirilir.
 
-5. Üçüncü Taraflarla Paylaşım
+Üçüncü Taraflarla Paylaşım
 
-Veriler yalnızca Google LLC (Google Analytics) ve Microsoft Corporation (Clarity) ile, bu hizmetlerin sağlanması amacıyla paylaşılır. Bu veriler, ilgili firmaların kendi sunucularında anonim biçimde işlenir.
+Veriler hiçbir üçüncü tarafla paylaşılmaz.
 
-6. Çerez Saklama Süresi
+Saklama Süresi
 
-Analitik çerezler tarayıcıda genellikle 24 aya kadar saklanır. Kullanıcı istediği zaman tarayıcı ayarlarından bu çerezleri silebilir.
+Tema tercihi bilgisi, kullanıcı tarayıcı verilerini silene kadar tarayıcıda kalır.
 
-7. Haklarınız
+Haklarınız
 
-KVKK’nın 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, silinmesini veya düzeltilmesini talep etme, onayınızı geri çekme haklarına sahipsiniz.
+KVKK’nın 11. maddesi uyarınca; kişisel verilerinizin işlenmediğini teyit etme veya varsa verilerin silinmesini talep etme hakkına sahipsiniz.
 
-8. İletişim
+İletişim
 
-Bu konudaki taleplerinizi sitenin iletişim bölümünde yer alan adres üzerinden iletebilirsiniz.
+Bu site yalnızca içerik yayımlamak amacıyla hazırlanmıştır ve kişisel veri toplanmadığından ayrıca bir iletişim kanalı bulunmamaktadır.
