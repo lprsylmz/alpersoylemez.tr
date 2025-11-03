@@ -80,27 +80,6 @@
     </style>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const consent = localStorage.getItem("analytics_consent");
-            if (!consent) {
-                document.getElementById("cookie-banner").style.display = "block";
-            }
-
-            document.getElementById("cookie-accept").onclick = function () {
-                localStorage.setItem("analytics_consent", "accepted");
-                loadAnalytics();
-                document.getElementById("cookie-banner").remove();
-            };
-
-            document.getElementById("cookie-reject").onclick = function () {
-                localStorage.setItem("analytics_consent", "rejected");
-                document.getElementById("cookie-banner").remove();
-            };
-        });
-    </script>
-
-    <!-- Tema tercihi -->
-    <script>
         (function () {
             const isDark = localStorage.getItem('darkMode') === 'true';
             document.documentElement.classList.add(isDark ? 'dark' : 'light');
