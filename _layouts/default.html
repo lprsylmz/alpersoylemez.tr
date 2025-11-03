@@ -9,39 +9,7 @@
         }
     </script>
 
-    <!-- Google Analytics izleme kodunu kullanıcı onayı olmadan yükleme -->
-    <script>
-        function loadAnalytics() {
-            const script = document.createElement("script");
-            script.async = true;
-            script.src = "https://www.googletagmanager.com/gtag/js?id=G-LHZW1B9K3D";
-            document.head.appendChild(script);
 
-            script.onload = () => {
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                window.gtag = gtag;
-                gtag('js', new Date());
-                gtag('config', 'G-LHZW1B9K3D');
-            };
-
-            (function (c, l, a, r, i, t, y) {
-                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-            })(window, document, "clarity", "script", "tx8orz52e5");
-
-        }
-
-        function checkConsent() {
-            const consent = localStorage.getItem("analytics_consent");
-            if (consent === "accepted") {
-                loadAnalytics();
-            }
-        }
-
-        checkConsent();
-    </script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -165,16 +133,6 @@
 
     {% include footer.html %}
 
-    <!-- Çerez izin bannerı -->
-<div id="cookie-banner" style="display:none;">
-    Bu site kullanıcı deneyimini geliştirmek ve istatistiksel analiz yapmak için çerezler kullanır. Onay vermeniz
-    halinde bu veriler işlenir.
-    Ayrıntılı bilgi için <a href="/aydinlatma-metni" target="_blank"
-        style="text-decoration:underline;color:#93c5fd;">Aydınlatma Metni</a>’ni inceleyebilirsiniz.
-    <br>
-    <button id="cookie-accept">Kabul Et</button>
-    <button id="cookie-reject">Reddet</button>
-</div>
 
 </body>
 
