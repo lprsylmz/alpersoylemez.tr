@@ -16,12 +16,12 @@ description: alpersoylemez.tr
         <div class="border-l-2 border-slate-500 h-6"></div>
 
         <div class="w-1/2 pl-4 text-left text-xs flex flex-col space-y-1">
-            <p class="text-gray-500 leading-none">
+            <p class="text-gray-300 leading-none">
                 {{ post.date | date: "%d/%m/%Y" }}
             </p>
-            <p class="text-gray-500 leading-none">
+            <p class="text-gray-300 leading-none">
                 {% for cat in post.categories %}
-                    <a href="/categories/#{{ cat | slugify }}" class="text-gray-600 hover:underline">
+                    <a href="/categories/#{{ cat | slugify }}" class="text-gray-300 hover:underline">
                         {{ cat }}
                     </a>{% unless forloop.last %}, {% endunless %}
                 {% endfor %}
