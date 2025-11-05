@@ -50,3 +50,6 @@ Pense, bıçak, testere, tornavida ve daha fazlası tek bir kompakt yapıda bir 
 
 
 ---
+
+Paylaştığım içeriklerin amacı, ürünlerin gerçek kullanım senaryolarına dair fikir vermek ve benim yaşadığım olumlu ya da olumsuz deneyimlerden izleyicilerin önceden haberdar olmasını sağlamaktır.
+Tüm ürünleri kendi imkânlarımla temin ettim; hiçbir marka, kurum veya kişiyle reklam, iş birliği ya da sponsorluk anlaşmam bulunmamaktadır.

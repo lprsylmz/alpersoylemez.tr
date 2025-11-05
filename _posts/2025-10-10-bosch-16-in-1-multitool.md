@@ -7,6 +7,7 @@ categories: [EDC]
 tags: [edc, multitool, kampçılık]
 ---
 
+
 EDC (Everyday Carry), kişinin günlük yaşamda yanında taşıdığı temel eşyaların bütünüdür. Bu eşyalar genellikle bıçak, el feneri, çok amaçlı alet, kalem, cüzdan, anahtarlık ve telefon gibi pratik araçlardan oluşur. Amaç, beklenmedik durumlara hazırlıklı olmak ve günlük görevleri verimli şekilde yerine getirmektir. EDC kavramı işlevsellik, dayanıklılık ve minimalizm üzerine kuruludur.
 
 Bosch 16-in-1 Multitool Pense
@@ -40,3 +41,6 @@ Ev, atölye, kamp ve outdoor kullanımı için tasarlanmıştır. Dayanıklılı
 <div class="w-full flex justify-center p-1" style="aspect-ratio:16/9;">
   <iframe class="w-full h-full rounded-2xl" src="https://www.youtube.com/embed/1aTi64lUk2I?si=Y4Dn-8xTk8MzV1v-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+Paylaştığım içeriklerin amacı, ürünlerin gerçek kullanım senaryolarına dair fikir vermek ve benim yaşadığım olumlu ya da olumsuz deneyimlerden izleyicilerin önceden haberdar olmasını sağlamaktır.
+Tüm ürünleri kendi imkânlarımla temin ettim; hiçbir marka, kurum veya kişiyle reklam, iş birliği ya da sponsorluk anlaşmam bulunmamaktadır.
