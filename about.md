@@ -9,9 +9,9 @@ permalink: /about/
   <div class="mt-12 p-6 rounded-full flex justify-center">
 
 
-      <img x-show="!darkMode" src="/assets/images/favicon.ico" alt="Alper Söylemez"
+      <img x-show="!darkMode" src="/assets/images/sosyal/lpr2.webp" alt="Alper Söylemez"
            class="rounded-full w-32 h-32 mx-auto transform transition-transform duration-200 hover:scale-125" />
-      <img x-show="darkMode" src="/assets/images/favicon.png" alt="Alper Söylemez"
+      <img x-show="darkMode" src="/assets/images/sosyal/lprs.webp" alt="Alper Söylemez"
            class="rounded-full w-32 h-32 mx-auto transform transition-transform duration-200 hover:scale-125" />
 
 
