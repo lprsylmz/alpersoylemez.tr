@@ -9,6 +9,57 @@
         }
     </script>
 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('consent', 'default', {
+            ad_storage: 'denied',
+            analytics_storage: 'denied',
+            wait_for_update: 500
+        });
+    </script>
+
+    <!-- Google Tag: cookie onayına bağlı yükleme -->
+    <script>
+        (function () {
+            const consent = localStorage.getItem('cookie_consent');
+
+            if (consent === 'accepted') {
+                loadGA();
+            }
+
+            function loadGA() {
+                if (window.__ga_loaded) return;
+                window.__ga_loaded = true;
+
+                const s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2XD3WW29F7';
+                document.head.appendChild(s);
+
+                gtag('js', new Date());
+                gtag('config', 'G-2XD3WW29F7', {
+                    anonymize_ip: true
+                });
+            }
+
+            window.acceptCookies = function () {
+                localStorage.setItem('cookie_consent', 'accepted');
+                gtag('consent', 'update', {
+                    ad_storage: 'granted',
+                    analytics_storage: 'granted'
+                });
+                loadGA();
+                document.getElementById('cookie-banner').style.display = 'none';
+            };
+
+            window.rejectCookies = function () {
+                localStorage.setItem('cookie_consent', 'rejected');
+                document.getElementById('cookie-banner').style.display = 'none';
+            };
+        })();
+    </script>
 
 
     <meta charset="UTF-8" />
@@ -139,7 +190,20 @@
 
     {% include footer.html %}
 
+    <div id="cookie-banner" style="display:none">
+        Bu site, ziyaretçi davranışlarını anonim olarak analiz etmek ve site performansını iyileştirmek amacıyla Google
+        Analytics çerezlerini kullanır. Bu çerezler kişisel veri içermez, kimlik tespiti yapmaz ve yalnızca
+        istatistiksel ölçüm
+        için kullanılır. Onay vermediğiniz sürece analitik çerezler etkinleştirilmez.
+        <button id="cookie-accept" onclick="acceptCookies()">Kabul et</button>
+        <button id="cookie-reject" onclick="rejectCookies()">Reddet</button>
+    </div>
 
+    <script>
+        if (!localStorage.getItem('cookie_consent')) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
