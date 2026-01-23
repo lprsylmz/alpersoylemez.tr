@@ -1,0 +1,15 @@
+# Jekyll and Build Artifacts
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependencies
+node_modules/
+vendor/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
