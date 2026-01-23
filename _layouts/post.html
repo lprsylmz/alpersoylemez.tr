@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<article class="max-w-none">
+    <header class="mb-12 border-l-4 border-brand-accent dark:border-brand-muted pl-6">
+        <h2 class="text-4xl font-black tracking-tighter text-brand-dark dark:text-brand-light">{{ page.title }}</h2>
+        <p class="mt-4 text-sm text-brand-accent dark:text-brand-muted font-mono italic opacity-80">Yayın tarihi: {{
+            page.date | date: "%d.%m.%Y" }}</p>
+    </header>
+
+    <div class="prose prose-neutral dark:prose-invert max-w-none leading-relaxed text-lg text-brand-dark/90 dark:text-brand-light/90
+               [&_p]:mb-6 [&_h1]:mb-8 [&_h2]:mb-6 [&_h3]:mb-4 [&_ul]:mb-6 [&_ol]:mb-6 [&_li]:mb-2 last:[&_*]:mb-0">
+        {{ content }}
+        <div class="mt-16 flex flex-col gap-4">
+            <p class="text-sm font-bold tracking-widest text-brand-accent dark:text-brand-muted uppercase opacity-60">
+                Yazıyı Paylaş</p>
+            <div class="flex gap-4">
+                <!-- X (Twitter) -->
+                <a href="https://x.com/intent/post?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url | append: '' | url_encode }}"
+                    target="_blank" rel="noopener noreferrer"
+                    class="p-3 rounded-full border border-brand-accent/20 dark:border-brand-muted/20 hover:bg-brand-accent hover:text-brand-light dark:hover:bg-brand-muted dark:hover:text-brand-dark transition-all duration-300 group"
+                    title="X'de Paylaş">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                    </svg>
+                </a>
+                <!-- Bluesky -->
+                <a href="https://bsky.app/intent/compose?text={{ page.title | url_encode }}%0A{{ site.url }}{{ page.url | append: '' | url_encode }}"
+                    target="_blank" rel="noopener noreferrer"
+                    class="p-3 rounded-full border border-brand-accent/20 dark:border-brand-muted/20 hover:bg-brand-accent hover:text-brand-light dark:hover:bg-brand-muted dark:hover:text-brand-dark transition-all duration-300 group"
+                    title="Bluesky'da Paylaş">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 600 530">
+                        <path
+                            d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z" />
+                    </svg>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://api.whatsapp.com/send?text={{ page.title | url_encode }}%20{{ site.url }}{{ page.url | append: '' | url_encode }}"
+                    target="_blank" rel="noopener noreferrer"
+                    class="p-3 rounded-full border border-brand-accent/20 dark:border-brand-muted/20 hover:bg-brand-accent hover:text-brand-light dark:hover:bg-brand-muted dark:hover:text-brand-dark transition-all duration-300 group"
+                    title="WhatsApp'ta Paylaş">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-20 pt-10 border-t border-brand-muted/30 dark:border-brand-accent/30">
+            <a href="{{ '/' | relative_url }}"
+                class="inline-flex items-center px-6 py-3 bg-brand-dark text-brand-light dark:bg-brand-light dark:text-brand-dark font-bold tracking-tight rounded-xl hover:bg-brand-accent dark:hover:bg-brand-muted transition-all group">
+                <svg class="w-5 h-5 mr-3 transform group-hover:-translate-x-1 transition-transform" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                YAZILARA DÖN
+            </a>
+        </div>
+</article>

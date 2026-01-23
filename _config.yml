@@ -1,0 +1,12 @@
+title: My Generic Blog
+description: A clean Jekyll template
+author: Anonymous
+url: "https://example.com"
+baseurl: ""
+twitter_username: # username
+bluesky_username: # username.bsky.social
+locale: en_US
+site_name: My Generic Blog
+
+markdown: kramdown
+permalink: /:title/
