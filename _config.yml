@@ -1,0 +1,12 @@
+title: Alper Söylemez
+description: Notlarım; hatırlamak ve hatırlatmak için.
+author: Alper Söylemez
+url: "https://alpersoylemez.tr"
+baseurl: ""
+twitter_username: lprsylmz
+bluesky_username: lprsylmz.bsky.social
+locale: tr_TR
+site_name: Alper Söylemez
+
+markdown: kramdown
+permalink: /:title/

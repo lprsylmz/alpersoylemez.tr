@@ -1,0 +1,18 @@
+---
+layout: default
+title: Alper Söylemez
+---
+
+<ul class="space-y-10">
+    {% for post in site.posts %}
+    <li class="flex flex-row justify-between items-baseline group gap-4">
+        <a href="{{ post.url | relative_url }}"
+            class="text-base md:text-xl lg:text-2xl xl:text-2xl font-bold tracking-tight text-brand-dark dark:text-brand-light group-hover:text-brand-accent dark:group-hover:text-brand-muted transition-colors line-clamp-1">
+            {{ post.title }}
+        </a>
+        <span class="text-xs md:text-sm text-brand-dark dark:text-brand-light font-mono whitespace-nowrap">
+            {{ post.date | date: "%d/%m" }}
+        </span>
+    </li>
+    {% endfor %}
+</ul>
